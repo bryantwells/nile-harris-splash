@@ -77,14 +77,16 @@ figcaption {
 
 .button {
 	display: inline-block;
-	cursor: pointer;
-	text-underline-offset: 0.15rem;
-	text-decoration-thickness: 0.075rem;
+    cursor: pointer;
+    text-underline-offset: 0.15rem;
+    text-decoration-thickness: 0.075rem;
+    padding: 0 0.5rem;
+    border-radius: 3px;
 }
 
 .button:hover, .button.is-active {
-	text-decoration: underline;
-	
+	background: yellow;
+    color: black;
 }
 
 @media (max-width: 900px) {
