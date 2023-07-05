@@ -7,19 +7,38 @@
 	<link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
+
 	<figure>
-		<video autoplay muted loop playsinline>
-			<source src="https://nile-harris-bucket.nyc3.cdn.digitaloceanspaces.com/this-worst-is-yet-to-come_1080p.mp4" type="video/mp4">
-		</video>
+		<video autoplay muted loop playsinline></video>
 		<figcaption>
 			<p>
 				Nile Harris is a performer and director of live works of art. He has done a few things and hopes to do a few more, God willing. His next work <em>this house is not a home</em> premieres July 14-16, 2023 at Abrons Arts Center, <a href="https://www.abronsartscenter.org/programs/this-house-is-not-a-home" target="blank">tickets here</a>.
 			</p>
-			<form>
-				sound <button name="on">on</button> <button name="off" disabled>off</button>
-			</form>
+			<div class="control">
+				<div class="control-group">
+					<label>Channel</label>
+					<div class="button button--channel is-active" data-channel="1">1</div>
+					<div class="button button--channel" data-channel="2">2</div>
+				</div>
+				<div class="control-group">
+					<label>Sound</label>
+					<div class="button button--soundOn">on</div>
+					<div class="button button--soundOff is-active">off</div>
+				</div>
+			</div>
 		</figcaption>
 	</figure>
+
+	<channel-list>
+		<channel 
+			id="channel-1"
+			data-src="https://nile-harris-bucket.nyc3.cdn.digitaloceanspaces.com/this-worst-is-yet-to-come_1080p.mp4" 
+			data-color="yellow">
+		<channel 
+			id="channel-2"
+			data-src="https://nile-harris-bucket.nyc3.cdn.digitaloceanspaces.com/black-code-studies_1080p.mp4" 
+			data-color="blue">
+	</channel-list>
 	
 	<script src="script.js?v=2"></script>
 </body>

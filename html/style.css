@@ -9,15 +9,10 @@
 html {
 	height: 100%;
 	color: yellow;
-	font-size: 22px;
+	font-size: 20px;
 	line-height: 1.5;
 	font-family: sans-serif;
 	background: black;
-}
-
-button {
-	font-size: inherit;
-	cursor: pointer;
 }
 
 a {
@@ -68,6 +63,28 @@ figcaption {
 	flex-direction: column;
 	justify-content: space-between;
 	overflow: scroll;
+}
+
+.control {
+	display: flex;
+	gap: 3rem;
+}
+
+.control-group {
+	display: flex;
+	gap: 1rem;
+}
+
+.button {
+	display: inline-block;
+	cursor: pointer;
+	text-underline-offset: 0.15rem;
+	text-decoration-thickness: 0.075rem;
+}
+
+.button:hover, .button.is-active {
+	text-decoration: underline;
+	
 }
 
 @media (max-width: 900px) {
